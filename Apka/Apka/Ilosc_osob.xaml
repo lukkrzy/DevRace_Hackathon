@@ -1,0 +1,159 @@
+﻿<Page
+    x:Class="Apka.Ilosc_osob"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Apka"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="textBox" Height="60" FontSize="34" TextAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,20,0,0" Text="Liczba osób" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Width="300"/>
+
+
+
+            <ListBox Grid.Column="0" 
+                     Grid.Row="1" 
+                     Grid.ColumnSpan="2" 
+                     HorizontalAlignment="Center"
+                     SelectionMode="Single">
+
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+                <ListBoxItem Content="1"
+                             Width="50"
+                             Margin="20,0,8,0"
+                             HorizontalAlignment="Left"
+                             ></ListBoxItem>
+                <ListBoxItem Content="2"
+                             Width="50"
+                             Margin="8,0,8,0"
+                             HorizontalAlignment="Left"></ListBoxItem>
+                <ListBoxItem Content="3"
+                              Width="50"
+                              Margin="8,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+                <ListBoxItem Content="4"
+                              Width="50"
+                              Margin="8,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+                <ListBoxItem Content="5"
+                              Width="50"
+                              Margin="8,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+            </ListBox>
+
+
+            <ListBox Grid.Column="0" 
+                     Grid.Row="2" 
+                     Grid.ColumnSpan="2" 
+                     SelectionMode="Single"
+                     HorizontalAlignment="Center">
+
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+                <ListBoxItem Content="6"
+                              Width="50"
+                              Margin="20,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+                <ListBoxItem Content="7"
+                              Width="50"
+                                 Margin="8,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+                <ListBoxItem Content="8"
+                              Width="50"
+                                 Margin="8,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+                <ListBoxItem Content="9"
+                              Width="50"
+                                 Margin="8,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+                <ListBoxItem Content="9+"
+                              Width="50"
+                                 Margin="8,0,8,0"
+                              HorizontalAlignment="Left"></ListBoxItem>
+            </ListBox>
+
+
+            <ToggleButton x:Name="button1" 
+                          Content="Niemowlę" 
+                          HorizontalAlignment="Center" 
+                          Grid.Row="3" 
+                          VerticalAlignment="Center" 
+                          Height="80" 
+                          Width="150"/>
+            <ToggleButton x:Name="button2" 
+                          Content="Dziecko"
+                          Grid.Column="1"
+                          HorizontalAlignment="Center"
+                          Grid.Row="3" 
+                          VerticalAlignment="Center"
+                          Height="80"
+                          Width="150"/>
+            <ToggleButton x:Name="button3"
+                          Content="Nastolatek" 
+                          HorizontalAlignment="Center"
+                          Grid.Row="4" 
+                          VerticalAlignment="Center" 
+                          Height="80"
+                          Width="150"/>
+            <ToggleButton x:Name="button4" 
+                          Content="Osoba Dorosła" 
+                          Grid.Column="1" 
+                          HorizontalAlignment="Center"
+                          Grid.Row="4"
+                          VerticalAlignment="Center" 
+                          Height="80" 
+                          Width="150"/>
+            <ToggleButton x:Name="button5" 
+                          Content="Starzec"
+                          HorizontalAlignment="Center"
+                          Grid.Row="5" 
+                          VerticalAlignment="Center" 
+                          Height="80" 
+                          Width="150"/>
+            <ToggleButton x:Name="button6"
+                          Content="fsdfdsdf"
+                          Grid.Column="1" 
+                          HorizontalAlignment="Center" 
+                          Grid.Row="5" 
+                          VerticalAlignment="Center"
+                          Height="80"
+                          Width="150" 
+                          />
+            <Button x:Name="button"  
+                    Content="Dalej" 
+                    Click="button_Click" 
+                    Grid.Column="0" 
+                    Grid.ColumnSpan="2"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Grid.Row="6"   
+                    Width="200" 
+                    Height="60"/>
+
+        </Grid>
+    </Grid>
+</Page>

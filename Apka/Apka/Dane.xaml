@@ -1,0 +1,93 @@
+﻿<Page
+    x:Class="Apka.Dane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Apka"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Moje dane"
+                       TextAlignment="Center"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       Grid.Row="0"
+                       Margin="0,10,0,0"
+                       ></TextBlock>
+            <StackPanel Grid.Row="1" Height="auto"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    Orientation="Vertical" Margin="15,0"
+                    >
+                <TextBlock Text="Imię"
+                       FontSize="30"
+                       Foreground="Black"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10"
+                       HorizontalAlignment="Center"
+                       />
+                <TextBox x:Name="TextBox_Login"
+                     Width="300"
+                     PlaceholderText="Podaj imie..."
+                     FontSize="20"
+                     />
+                <TextBlock Text="Nazwisko"
+                       FontSize="30"
+                       Foreground="Black"
+                       FontWeight="Bold"
+                       Margin="0,15,0,10"
+                       HorizontalAlignment="Center"
+                       />
+                <TextBox x:Name="TextBox_Password"
+                     Width="300"                    
+                     PlaceholderText="Podaj nazwisko..."
+                     FontSize="20"
+                     />
+                <TextBlock Text="Adres zamieszkania"
+                       FontSize="30"
+                       Foreground="Black"
+                       FontWeight="Bold"
+                       Margin="0,15,0,10"
+                       HorizontalAlignment="Center"
+                       />
+                <TextBox x:Name="Adres"
+                     Width="300"
+                     PlaceholderText="Podaj imie..."
+                     FontSize="20"
+                     />
+                <TextBlock Text="Numer telefonu"
+                       FontSize="30"
+                       Foreground="Black"
+                       FontWeight="Bold"
+                       Margin="0,15,0,10"
+                       HorizontalAlignment="Center"
+                       />
+                <TextBox x:Name="phone_number"
+                     Width="300"                    
+                     PlaceholderText="Podaj nazwisko..."
+                     FontSize="20"
+                     />
+                <TextBlock Text="Dodatkowe informacje"
+                       FontSize="30"
+                       Foreground="Black"
+                       FontWeight="Bold"
+                       Margin="0,15,0,10"
+                       HorizontalAlignment="Center"
+                       />
+                <TextBox x:Name="information"
+                     Width="300"                    
+                     PlaceholderText="Podaj nazwisko..."
+                     FontSize="20"
+                     />
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

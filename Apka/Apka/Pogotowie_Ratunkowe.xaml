@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="Apka.Pogotowie_Ratunkowe"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Apka"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="140"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="textBox" Height="60" FontSize="34" TextAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,20,0,0" Text="Co się stało ?" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Width="300"/>
+            <TextBox x:Name="textBlock" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Height="100" Width="300" HorizontalAlignment="Center" Margin="0,0,0,0"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+            <ToggleButton x:Name="button1" 
+                    Content="Omdlenie" 
+                    HorizontalAlignment="Center" 
+                    Grid.Row="2" 
+                    VerticalAlignment="Center" 
+                    Height="80" 
+                    Width="150" Background="#33FD0000">
+                
+            </ToggleButton>
+
+            <ToggleButton x:Name="button2"  
+                    Grid.Column="1" 
+                    HorizontalAlignment="Center" 
+                    Grid.Row="2" 
+                    VerticalAlignment="Center" 
+                    Height="80" 
+                    Width="150">
+                <TextBlock Text="Wypadek samochodowy" TextAlignment="Center" TextWrapping="Wrap"></TextBlock>
+            </ToggleButton>
+            <ToggleButton x:Name="button3" 
+                    Content="Poparzenie" 
+                    HorizontalAlignment="Center" 
+                    Grid.Row="3" 
+                    VerticalAlignment="Center" 
+                    Height="80" 
+                    Width="150"/>
+            <ToggleButton x:Name="button4" 
+                    Content="Odmrożenie" 
+                    Grid.Column="1" 
+                    HorizontalAlignment="Center" 
+                    Grid.Row="3" 
+                    VerticalAlignment="Center" 
+                    Height="80" 
+                    Width="150"/>
+            <ToggleButton x:Name="button5" 
+                    Content="Podtopienie" 
+                    HorizontalAlignment="Center" 
+                    Grid.Row="4" 
+                    VerticalAlignment="Center" 
+                    Height="80" 
+                    Width="150"/>
+            <ToggleButton x:Name="button6" 
+                    Content="Porażenie prądem" 
+                    Grid.Column="1" 
+                    HorizontalAlignment="Center" 
+                    Grid.Row="4" 
+                    VerticalAlignment="Center" 
+                    Height="80" 
+                    Width="150"/>
+            <Button x:Name="button" 
+                    Content="Dalej" 
+                    Click="button_Click" 
+                    Grid.Column="0" 
+                    Grid.ColumnSpan="2"
+                    HorizontalAlignment="Center" 
+                    Margin="0,0,0,0"
+                    Grid.Row="5" 
+                    VerticalAlignment="Center" 
+                    RenderTransformOrigin="0.026,0.01" Height="60" Width="200"/>
+        </Grid>
+    </Grid>
+</Page>
